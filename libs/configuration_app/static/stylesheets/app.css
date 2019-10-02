@@ -13,6 +13,7 @@ body{
     background-color: #246EBA;
     margin:0;
     color: white;
+    font-family: Roboto,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 div#mainContent{
@@ -114,12 +115,14 @@ select.wifiNetworkInputs {
 }
 
 .wifiConnectButton{
-    width: 100%;
+    width: 75%;
     margin:2em 0;
     padding:.5em;
     background-color: #eb4647;
     font-size: 2rem;
     color: #fff;
+    border:none;
+    border-radius: 1rem;
 }
 
 .manualSSIDEntry{
