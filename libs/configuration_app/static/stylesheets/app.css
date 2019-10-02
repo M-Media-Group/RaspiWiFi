@@ -10,14 +10,14 @@ padding:0;
 }
 
 body{
-    background-color: #000;
+    background-color: #246EBA;
     margin:0;
     color: white;
 }
 
 div#mainContent{
     padding:.3em;
-    background-color: #000;
+    background-color: #246EBA;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -76,7 +76,7 @@ li.wifiNetwork:after {
     content: '▼';
     position: absolute;
     width: 25px;
-    color: #deab04;
+    color: #eb4647;
     font-weight: bold;
     font-size: 1.4rem;
     right: 0px;
@@ -89,8 +89,8 @@ li.wifiNetwork:after {
 select.wifiNetworkInputs {
     position: relative;
     width: 100%;
-    background: #111;
-    color: #999;
+    background: #246EBA;
+    color: #fff;
     border: none;
     outline: none;
     font-size: 1.5rem;
@@ -108,8 +108,8 @@ select.wifiNetworkInputs {
     width: 100%;
     padding:1em;
     font-size: 1.4rem;
-    color: #999;
-    background: #111;
+    color: #fff;
+    background: #246EBA;
     border:#999 solid 1px;
 }
 
@@ -117,7 +117,7 @@ select.wifiNetworkInputs {
     width: 100%;
     margin:2em 0;
     padding:.5em;
-    background-color: #deab04;
+    background-color: #eb4647;
     font-size: 2rem;
     color: #fff;
 }
@@ -144,7 +144,7 @@ div#saveCredentialsOutput{
 }
 
 .saveCredentialsSSID{
-  color: #deab04;
+  color: #eb4647;
   font-size: 2em;
 }
 
@@ -179,7 +179,7 @@ div#saveCredentialsOutput{
         content: '▼';
         position: absolute;
         width: 50px;
-        color: #deab04;
+        color: #eb4647;
         font-weight: bold;
         font-size: 2rem;
         right: 0px;
