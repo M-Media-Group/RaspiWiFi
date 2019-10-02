@@ -2,19 +2,6 @@
 
 {% block body %}
   <div id="mainContent">
-    <div id="wpaStatus">
-      <ul>
-        {% if config_hash['wpa_enabled'] == '1': %}
-          <li><a href="{{ url_for('wpa_settings') }}">Config. Mode WPA: ENABLED</a></li>
-          <li><a href="{{ url_for('wpa_settings') }}">Key: {{ config_hash['wpa_key'] }}</a></li>
-        {% endif %}
-
-        {% if config_hash['wpa_enabled'] == '0': %}
-          <li><a href="{{ url_for('wpa_settings') }}">Config. Mode WPA: DISABLED</a></li>
-      {% endif %}
-      </ul>
-    </div>
-
     <h1>WiFi Setup</h1>
     <div class="wifiIcon"></div>
 
@@ -38,5 +25,17 @@
         <input type="submit", class="wifiConnectButton">
       </ul>
     </form>
+    <div id="wpaStatus">
+      <ul>
+        {% if config_hash['wpa_enabled'] == '1': %}
+          <li><a href="{{ url_for('wpa_settings') }}">Config. Mode WPA: ENABLED</a></li>
+          <li><a href="{{ url_for('wpa_settings') }}">Key: {{ config_hash['wpa_key'] }}</a></li>
+        {% endif %}
+
+        {% if config_hash['wpa_enabled'] == '0': %}
+          <li><a href="{{ url_for('wpa_settings') }}">Config. Mode WPA: DISABLED</a></li>
+      {% endif %}
+      </ul>
+    </div>
   </div>
 {% endblock %}
