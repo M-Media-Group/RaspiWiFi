@@ -7,7 +7,7 @@
 
     <form action="{{ url_for('save_credentials') }}" method=post>
       <ul>
-        <li><label for="ssid">Select your WiFi network</label></li>
+        <li><label for="ssid">WiFi name</label></li>
 
         <li class="wifiNetwork">
           <select id="ssid" name="ssid", class="wifiNetworkInputs">
@@ -19,8 +19,8 @@
 
         <li><a href="{{ url_for('manual_ssid_entry') }}" class="manualSSIDEntry">manual SSID entry -></a></li>
 
-        <li><label for="wifi_key">Your Wifi password</label></li>
-        <li><input type="password" name="wifi_key", class="wifiNetworkInputs"></li>
+        <li><label for="wifi_key">WiFi password</label></li>
+        <li><input type="password" name="wifi_key", class="wifiNetworkInputs" placeholder="Password"></li>
 
         <input type="submit", class="wifiConnectButton">
       </ul>
